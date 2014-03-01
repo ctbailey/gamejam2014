@@ -3,6 +3,7 @@ using System.Collections;
 
 public class EnemyBehavior : MonoBehaviour {
 	public BoxCollider playerFeet;
+	public bool isDead = false;
 	
 	// Use this for initialization
 	void Start () {
@@ -15,7 +16,8 @@ public class EnemyBehavior : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider c)
 	{
-		if(c.Equals(playerFeet))
+		if(c.Equals(playerFeet)
+			&& !isDead)
 		{
 			OnDeath();
 		}
@@ -23,5 +25,6 @@ public class EnemyBehavior : MonoBehaviour {
 	void OnDeath()
 	{
 		Debug.Log("Enemy died!");
+		isDead = true;
 	}
 }
