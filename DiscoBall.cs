@@ -10,6 +10,6 @@ public class DiscoBall : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate(0,.45f,0);
+		transform.Rotate(0,Time.deltaTime * 15,0);
 	}
 }

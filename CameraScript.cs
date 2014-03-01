@@ -4,10 +4,12 @@ using System.Collections;
 public class CameraScript : MonoBehaviour {
 
 	public Transform player;
-
+	bool show;
+	
 	// Use this for initialization
 	void Start () {
-	
+		Time.timeScale = 0;
+		show = true;
 	}
 	
 	// Update is called once per frame
@@ -23,6 +25,20 @@ public class CameraScript : MonoBehaviour {
 		else
 		{
 			transform.position = new Vector3(player.position.x, 2.5f, -10);
+		}
+	}
+	
+	void OnGUI()
+	{
+		
+		if(show)
+		{
+			GUI.Box(new Rect(20,20,Screen.width - 40,Screen.height - 40), "Do it to it");
+			if(GUI.Button(new Rect(Screen.width / 2 - 50, Screen.height - 100, 100, 50), "Begin"))
+			{
+				show = false;
+				Time.timeScale = 1;
+			}
 		}
 	}
 }

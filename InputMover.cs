@@ -33,9 +33,12 @@ public class InputMover : MonoBehaviour {
 	}
 	Vector3 Update_MoveVertical()
 	{
-		jumpAcceleration -= gravity;
-		Vector3 verticalMove = new Vector3(0, jumpAcceleration, 0);
-		//Debug.Log(verticalMove);
+		if(!controller.isGrounded)
+		{
+			jumpAcceleration -= gravity;
+		}
+		Vector3 verticalMove = new Vector3(0, jumpAcceleration * Time.deltaTime, 0);
+		Debug.Log(verticalMove);
 		return verticalMove;
 	}
 	void Jump()
