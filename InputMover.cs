@@ -35,12 +35,12 @@ public class InputMover : MonoBehaviour {
 	{
 		jumpAcceleration -= gravity;
 		Vector3 verticalMove = new Vector3(0, jumpAcceleration, 0);
-		Debug.Log(verticalMove);
+		//Debug.Log(verticalMove);
 		return verticalMove;
 	}
 	void Jump()
 	{	
-		Debug.Log("Jumping");
+		//Debug.Log("Jumping");
 		jumpAcceleration = jumpSpeed;
 	}
 }
