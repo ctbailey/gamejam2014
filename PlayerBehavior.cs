@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class InputMover : MonoBehaviour {
+public class PlayerBehavior : MonoBehaviour {
 	
 	public CharacterController controller;
-	public float gravity = 0.1f;
-	public float jumpSpeed = 1.0f;
-	public float horizontalSpeed = 50.0f;
-	private float jumpAcceleration = 0f;
+	
+	public float height = 1;
+	public float gravity = 1;
+	public float currentJumpSpeed = 15;
+	public float horizontalSpeed = 20.0f;
+	private float startJumpSpeed = 0f;
 	
 	// Use this for initialization
 	void Start () {
@@ -35,15 +37,17 @@ public class InputMover : MonoBehaviour {
 	{
 		if(!controller.isGrounded)
 		{
-			jumpAcceleration -= gravity;
+			startJumpSpeed -= gravity;
 		}
-		Vector3 verticalMove = new Vector3(0, jumpAcceleration * Time.deltaTime, 0);
-		Debug.Log(verticalMove);
+		Vector3 verticalMove = new Vector3(0, startJumpSpeed * Time.deltaTime, 0);
 		return verticalMove;
 	}
 	void Jump()
 	{	
-		//Debug.Log("Jumping");
-		jumpAcceleration = jumpSpeed;
+		startJumpSpeed = currentJumpSpeed;
+	}
+	void OnTriggerEnter(Collider c)
+	{
+		//Debug.Log("Player triggered!");	
 	}
 }
