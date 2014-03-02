@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using AssemblyCSharp;
 
 public class PlayerBehavior : MonoBehaviour {
 	
 	public CharacterController controller;
 	
-	public float height = 1;
 	public float gravity = 1;
 	public float currentJumpSpeed = 15;
 	public float horizontalSpeed = 20.0f;
@@ -53,11 +53,29 @@ public class PlayerBehavior : MonoBehaviour {
 		return verticalMove;
 	}
 	void Jump()
-	{	
+	{
 		startJumpSpeed = currentJumpSpeed;
 	}
 	void OnTriggerEnter(Collider c)
 	{
-		//Debug.Log("Player triggered!");	
+		EnemyBehavior enemy = Util.GetEnemyBehavior(c.gameObject);
+		if(enemy != null)
+		{
+			if(c is SphereCollider)
+			{
+				Jump();
+			}
+			else
+			{
+				if(!enemy.isDead)
+				{
+					OnDeath();	
+				}
+			}
+		}
+	}
+	void OnDeath()
+	{
+		Debug.Log ("Player died!");	
 	}
 }

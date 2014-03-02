@@ -18,7 +18,7 @@ public class EnemyBehavior : MonoBehaviour {
 		
 	}
 	protected virtual void OnTriggerEnter(Collider c)
-	{
+	{	
 		if(c.Equals(playerFeet)
 			&& !isDead)
 		{
@@ -28,6 +28,9 @@ public class EnemyBehavior : MonoBehaviour {
 	protected virtual void OnDeath()
 	{
 		Debug.Log("Enemy died!");
+		GetComponent<SphereCollider>().enabled = false;
+		GetComponent<CharacterController>().enabled = false;
+		GetComponent<BoxCollider>().enabled = false;
 		isDead = true;
 		SetFall(true);
 	}
