@@ -61,18 +61,16 @@ public class PlayerBehavior : MonoBehaviour {
 		EnemyBehavior enemy = Util.GetEnemyBehavior(c.gameObject);
 		if(enemy != null)
 		{
-			if(c is SphereCollider)
+			if(!enemy.isDead)
 			{
-				Jump();
-			}
-			else
-			{
-				if(!enemy.isDead)
-				{
-					OnDeath();	
-				}
+				OnDeath();	
 			}
 		}
+	}
+	public void KilledEnemy(EnemyBehavior enemy)
+	{
+		Debug.Log("Killed enemy!");
+		Jump();	
 	}
 	void OnDeath()
 	{

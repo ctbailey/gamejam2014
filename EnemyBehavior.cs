@@ -27,6 +27,7 @@ public class EnemyBehavior : MonoBehaviour {
 	}
 	protected virtual void OnDeath()
 	{
+		playerFeet.gameObject.GetComponent<PlayerBehavior>().KilledEnemy(this);
 		Debug.Log("Enemy died!");
 		GetComponent<SphereCollider>().enabled = false;
 		GetComponent<CharacterController>().enabled = false;
