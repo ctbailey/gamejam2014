@@ -33,6 +33,10 @@ public class PlayerBehavior : MonoBehaviour {
 			{
 				Jump();
 			}
+			else if(animator.GetBool("Jump"))
+			{
+				SetJump(false);
+			}
 			controller.Move(horizontalTranslation + verticalTranslation);
 			transform.position = new Vector3(transform.position.x, transform.position.y, 0);
 		}
@@ -90,6 +94,7 @@ public class PlayerBehavior : MonoBehaviour {
 	void Jump()
 	{
 		startJumpSpeed = currentJumpSpeed;
+		SetJump(true);
 	}
 	void OnTriggerEnter(Collider c)
 	{
@@ -126,5 +131,10 @@ public class PlayerBehavior : MonoBehaviour {
 	public virtual void SetHide(bool hide)
 	{
 		animator.SetBool("Hide", hide);
+	}
+	
+	protected virtual void SetJump(bool jump)
+	{
+		animator.SetBool("Jump", jump);
 	}
 }
