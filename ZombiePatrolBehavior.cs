@@ -23,7 +23,7 @@ public class ZombiePatrolBehavior : EnemyBehavior {
 	}
 	void Update_Patrol()
 	{
-		if(!isDead)
+		if(!isDead && !animator.GetBool("Attack"))
 		{
 			PatrolMove();
 		}

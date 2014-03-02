@@ -7,8 +7,12 @@ public class EnemyBehavior : MonoBehaviour {
 	public bool isDead = false;
 	protected Animator animator;
 	protected CharacterController controller;
+<<<<<<< HEAD
 	protected RoundRobinAudioCollection audioSources;
 		
+=======
+	float attackTimer = 0;
+>>>>>>> FETCH_HEAD
 	
 	// Use this for initialization
 	protected virtual void Start () {
@@ -18,12 +22,15 @@ public class EnemyBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	protected virtual void Update () {
-		
+		if(animator.GetBool("Attack") && Time.timeSinceLevelLoad - attackTimer > 1.5f)
+		{
+			SetAttack(false);
+		}
 	}
 	protected virtual void OnTriggerEnter(Collider c)
 	{	
 		if(c.Equals(playerFeet)
-			&& !isDead)
+			&& !isDead && !c.GetComponent<PlayerBehavior>().isDead)
 		{
 			OnDeath();
 		}
@@ -42,6 +49,12 @@ public class EnemyBehavior : MonoBehaviour {
 	protected virtual void SetWalk(bool walk)
 	{
 		animator.SetBool("Walk", walk);
+	}
+	
+	public virtual void SetAttack(bool attack)
+	{
+		animator.SetBool("Attack", attack);
+		attackTimer = Time.timeSinceLevelLoad;
 	}
 	
 	protected virtual void SetFall(bool fall)
