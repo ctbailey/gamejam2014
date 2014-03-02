@@ -14,20 +14,12 @@ public class CameraScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float y = 2.5f;
-		if(player.position.y < 5)
+		float y = transform.position.y;
+		if(player.position.y > -3)
 		{
-			y = 2.5f;
+			y = player.position.y + 3f;
 		}
-		else if(player.position.y < 10)
-		{
-			y = 7.5f;
-		}
-		else if(player.position.y < 15)
-		{
-			y = 12.5f;
-		}
-		y = player.position.y + 3f;
+		
 		if(player.position.x < -175)
 		{
 			transform.position = new Vector3(-175, y, -10);

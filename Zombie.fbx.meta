@@ -1,0 +1,1047 @@
+fileFormatVersion: 2
+guid: f98e3f34e7739463ba26a5abf6d685b9
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: DiscoZombie
+    100002: joint1
+    100004: joint12
+    100006: joint13
+    100008: joint14
+    100010: joint15
+    100012: joint16
+    100014: joint17
+    100016: joint18
+    100018: joint2
+    100020: joint21
+    100022: joint22
+    100024: joint23
+    100026: joint24
+    100028: joint27
+    100030: joint28
+    100032: joint29
+    100034: joint3
+    100036: joint4
+    100038: joint5
+    100040: joint6
+    100042: joint7
+    100044: //RootNode
+    400000: DiscoZombie
+    400002: joint1
+    400004: joint12
+    400006: joint13
+    400008: joint14
+    400010: joint15
+    400012: joint16
+    400014: joint17
+    400016: joint18
+    400018: joint2
+    400020: joint21
+    400022: joint22
+    400024: joint23
+    400026: joint24
+    400028: joint27
+    400030: joint28
+    400032: joint29
+    400034: joint3
+    400036: joint4
+    400038: joint5
+    400040: joint6
+    400042: joint7
+    400044: //RootNode
+    4300000: DiscoZombie
+    7400000: idle
+    7400002: walk
+    7400004: fall
+    7400006: jump
+    7400008: attack
+    7400010: run
+    7400012: hide
+    7400014: sit
+    7400016: tPose
+    9500000: //RootNode
+    13700000: DiscoZombie
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 5
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DiscoZombie
+        weight: 0
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint12
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13/joint14
+        weight: 1
+      - path: joint1/joint2/joint3/joint15
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16/joint17
+        weight: 1
+      - path: joint1/joint18
+        weight: 1
+      - path: joint1/joint18/joint27
+        weight: 1
+      - path: joint1/joint18/joint27/joint28
+        weight: 1
+      - path: joint1/joint18/joint27/joint28/joint29
+        weight: 1
+      - path: joint1/joint21
+        weight: 1
+      - path: joint1/joint21/joint22
+        weight: 1
+      - path: joint1/joint21/joint22/joint23
+        weight: 1
+      - path: joint1/joint21/joint22/joint23/joint24
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      firstFrame: 36
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DiscoZombie
+        weight: 0
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint12
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13/joint14
+        weight: 1
+      - path: joint1/joint2/joint3/joint15
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16/joint17
+        weight: 1
+      - path: joint1/joint18
+        weight: 1
+      - path: joint1/joint18/joint27
+        weight: 1
+      - path: joint1/joint18/joint27/joint28
+        weight: 1
+      - path: joint1/joint18/joint27/joint28/joint29
+        weight: 1
+      - path: joint1/joint21
+        weight: 1
+      - path: joint1/joint21/joint22
+        weight: 1
+      - path: joint1/joint21/joint22/joint23
+        weight: 1
+      - path: joint1/joint21/joint22/joint23/joint24
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: fall
+      takeName: Take 001
+      firstFrame: 61
+      lastFrame: 76
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DiscoZombie
+        weight: 0
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint12
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13/joint14
+        weight: 1
+      - path: joint1/joint2/joint3/joint15
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16/joint17
+        weight: 1
+      - path: joint1/joint18
+        weight: 1
+      - path: joint1/joint18/joint27
+        weight: 1
+      - path: joint1/joint18/joint27/joint28
+        weight: 1
+      - path: joint1/joint18/joint27/joint28/joint29
+        weight: 1
+      - path: joint1/joint21
+        weight: 1
+      - path: joint1/joint21/joint22
+        weight: 1
+      - path: joint1/joint21/joint22/joint23
+        weight: 1
+      - path: joint1/joint21/joint22/joint23/joint24
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: jump
+      takeName: Take 001
+      firstFrame: 78
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DiscoZombie
+        weight: 0
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint12
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13/joint14
+        weight: 1
+      - path: joint1/joint2/joint3/joint15
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16/joint17
+        weight: 1
+      - path: joint1/joint18
+        weight: 1
+      - path: joint1/joint18/joint27
+        weight: 1
+      - path: joint1/joint18/joint27/joint28
+        weight: 1
+      - path: joint1/joint18/joint27/joint28/joint29
+        weight: 1
+      - path: joint1/joint21
+        weight: 1
+      - path: joint1/joint21/joint22
+        weight: 1
+      - path: joint1/joint21/joint22/joint23
+        weight: 1
+      - path: joint1/joint21/joint22/joint23/joint24
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: attack
+      takeName: Take 001
+      firstFrame: 82
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 00000000010000000100000000000000000000000100000001000000010000000100000000000000000000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DiscoZombie
+        weight: 0
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint12
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13/joint14
+        weight: 1
+      - path: joint1/joint2/joint3/joint15
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16/joint17
+        weight: 1
+      - path: joint1/joint18
+        weight: 1
+      - path: joint1/joint18/joint27
+        weight: 1
+      - path: joint1/joint18/joint27/joint28
+        weight: 1
+      - path: joint1/joint18/joint27/joint28/joint29
+        weight: 1
+      - path: joint1/joint21
+        weight: 1
+      - path: joint1/joint21/joint22
+        weight: 1
+      - path: joint1/joint21/joint22/joint23
+        weight: 1
+      - path: joint1/joint21/joint22/joint23/joint24
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: run
+      takeName: Take 001
+      firstFrame: 96
+      lastFrame: 108
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DiscoZombie
+        weight: 0
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint12
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13/joint14
+        weight: 1
+      - path: joint1/joint2/joint3/joint15
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16/joint17
+        weight: 1
+      - path: joint1/joint18
+        weight: 1
+      - path: joint1/joint18/joint27
+        weight: 1
+      - path: joint1/joint18/joint27/joint28
+        weight: 1
+      - path: joint1/joint18/joint27/joint28/joint29
+        weight: 1
+      - path: joint1/joint21
+        weight: 1
+      - path: joint1/joint21/joint22
+        weight: 1
+      - path: joint1/joint21/joint22/joint23
+        weight: 1
+      - path: joint1/joint21/joint22/joint23/joint24
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hide
+      takeName: Take 001
+      firstFrame: 110
+      lastFrame: 134
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DiscoZombie
+        weight: 0
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint12
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13/joint14
+        weight: 1
+      - path: joint1/joint2/joint3/joint15
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16/joint17
+        weight: 1
+      - path: joint1/joint18
+        weight: 1
+      - path: joint1/joint18/joint27
+        weight: 1
+      - path: joint1/joint18/joint27/joint28
+        weight: 1
+      - path: joint1/joint18/joint27/joint28/joint29
+        weight: 1
+      - path: joint1/joint21
+        weight: 1
+      - path: joint1/joint21/joint22
+        weight: 1
+      - path: joint1/joint21/joint22/joint23
+        weight: 1
+      - path: joint1/joint21/joint22/joint23/joint24
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: sit
+      takeName: Take 001
+      firstFrame: 136
+      lastFrame: 136.100006
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DiscoZombie
+        weight: 0
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint12
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13/joint14
+        weight: 1
+      - path: joint1/joint2/joint3/joint15
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16/joint17
+        weight: 1
+      - path: joint1/joint18
+        weight: 1
+      - path: joint1/joint18/joint27
+        weight: 1
+      - path: joint1/joint18/joint27/joint28
+        weight: 1
+      - path: joint1/joint18/joint27/joint28/joint29
+        weight: 1
+      - path: joint1/joint21
+        weight: 1
+      - path: joint1/joint21/joint22
+        weight: 1
+      - path: joint1/joint21/joint22/joint23
+        weight: 1
+      - path: joint1/joint21/joint22/joint23/joint24
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: tPose
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DiscoZombie
+        weight: 0
+      - path: joint1
+        weight: 1
+      - path: joint1/joint2
+        weight: 1
+      - path: joint1/joint2/joint3
+        weight: 1
+      - path: joint1/joint2/joint3/joint4
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: joint1/joint2/joint3/joint4/joint5/joint7
+        weight: 1
+      - path: joint1/joint2/joint3/joint12
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13
+        weight: 1
+      - path: joint1/joint2/joint3/joint12/joint13/joint14
+        weight: 1
+      - path: joint1/joint2/joint3/joint15
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16
+        weight: 1
+      - path: joint1/joint2/joint3/joint15/joint16/joint17
+        weight: 1
+      - path: joint1/joint18
+        weight: 1
+      - path: joint1/joint18/joint27
+        weight: 1
+      - path: joint1/joint18/joint27/joint28
+        weight: 1
+      - path: joint1/joint18/joint27/joint28/joint29
+        weight: 1
+      - path: joint1/joint21
+        weight: 1
+      - path: joint1/joint21/joint22
+        weight: 1
+      - path: joint1/joint21/joint22/joint23
+        weight: 1
+      - path: joint1/joint21/joint22/joint23/joint24
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .200000003
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: joint1
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint18
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint21
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint27
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint22
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint28
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint23
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint2
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint3
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint4
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint5
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint12
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint15
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint13
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint16
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint29
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint24
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint7
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint6
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint17
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint14
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Zombie(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: DiscoZombie
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint1
+      position: {x: .00715305284, y: .714892685, z: -.119925462}
+      rotation: {x: .479921222, y: -.519303024, z: -.479921222, w: .519303024}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint2
+      position: {x: -.166230813, y: 5.62369948e-18, z: -1.84553276e-17}
+      rotation: {x: .987495184, y: -.157649532, z: -9.65324903e-18, w: 6.04666447e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint3
+      position: {x: -.148078963, y: 4.99600381e-17, z: -1.02374354e-17}
+      rotation: {x: .988204479, y: -.153140277, z: -2.66899916e-17, w: 5.78271312e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint4
+      position: {x: -.187975645, y: 5.82867128e-17, z: -6.58648063e-18}
+      rotation: {x: .981828988, y: -.189767808, z: -1.16199264e-17, w: 6.01196854e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint5
+      position: {x: -.281641692, y: 0, z: 0}
+      rotation: {x: -1.05510895e-23, y: -4.15206286e-16, z: .880695045, w: .473683715}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint6
+      position: {x: -.253024817, y: 1.55431221e-16, z: -9.95280588e-17}
+      rotation: {x: -.306310683, y: -.637317657, z: -.306310683, w: .637317657}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint7
+      position: {x: .0278203171, y: .230283335, z: -8.73668957e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint12
+      position: {x: -.128359601, y: .00895532034, z: .197273552}
+      rotation: {x: -.460724056, y: .536407888, z: .503041565, w: .496939838}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint13
+      position: {x: -.248209238, y: 9.99200762e-17, z: 5.50483528e-18}
+      rotation: {x: -1.62629792e-26, y: 3.49608647e-17, z: -.036494948, w: .999333858}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint14
+      position: {x: -.397879004, y: 1.69309009e-16, z: 1.29994941e-17}
+      rotation: {x: .473094404, y: -.525529921, z: -.491328984, w: .508523166}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint15
+      position: {x: -.11099638, y: .0077439337, z: -.219178274}
+      rotation: {x: -.462086678, y: .535234451, z: -.501776159, w: -.498217493}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint16
+      position: {x: -.229253888, y: 5.82867128e-17, z: 2.08307322e-17}
+      rotation: {x: 3.98606986e-27, y: 1.89159497e-18, z: -.0383765213, w: .999263346}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint17
+      position: {x: -.363381416, y: 3.42854453e-16, z: 1.61758659e-17}
+      rotation: {x: -.482286692, y: .51710695, z: -.482286692, w: .51710695}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint18
+      position: {x: .0496238731, y: .116380945, z: .130305767}
+      rotation: {x: .0279067308, y: .999543905, z: .00144824386, w: -.0114551485}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint27
+      position: {x: -.267246693, y: .046777349, z: -.0627596006}
+      rotation: {x: .996156752, y: .0875884593, z: 1.29515598e-09, w: -1.13878316e-10}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint28
+      position: {x: -.283332497, y: .0667028725, z: .0537875108}
+      rotation: {x: .875209928, y: .483605504, z: -.0105084172, w: -.00478446437}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint29
+      position: {x: -.188552722, y: -4.44089216e-17, z: 2.06330886e-09}
+      rotation: {x: 6.58884364e-17, y: 1.17049153e-08, z: -.211884156, w: .977294803}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint21
+      position: {x: .0447130464, y: .116768636, z: -.115999661}
+      rotation: {x: -.0532121956, y: .704871476, z: -.697084069, w: -.119993843}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint22
+      position: {x: -.280831397, y: -1.05636602e-16, z: -.0482202768}
+      rotation: {x: 1.56015925e-17, y: -2.14373747e-15, z: .0324617662, w: .999472976}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint23
+      position: {x: -.260812134, y: -.00295050326, z: .0409415588}
+      rotation: {x: -.629265606, y: -.323031843, z: -.20442678, w: .676672041}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: joint24
+      position: {x: -.168507978, y: 1.22124535e-16, z: -1.26077372e-17}
+      rotation: {x: -2.06241151e-26, y: -2.2245396e-16, z: -.242580608, w: .970131278}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 

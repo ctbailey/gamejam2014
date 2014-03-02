@@ -23,6 +23,15 @@ public class LightSwitch : MonoBehaviour {
 		{
 			directionalLight.SetActive(true);
 			SetDiscoLights(false);
+			GameObject[] zombies = GameObject.FindGameObjectsWithTag("Zombie");
+			for(int i = 0; i < zombies.Length; i++)
+			{
+				EnemyBehavior behavior = (zombies[i].GetComponent<EnemyBehavior>() != null) ? zombies[i].GetComponent<EnemyBehavior>() : (zombies[i].GetComponent<ZombieBarBehavior>() != null) ? zombies[i].GetComponent<ZombieBarBehavior>() : null;
+				if(behavior != null)
+				{
+					behavior.SetHide(true);
+				}
+			}
 		}
 	}
 	
@@ -34,19 +43,5 @@ public class LightSwitch : MonoBehaviour {
 		{
 			discoLights[i].SetActive(b);
 		}
-		
-//		for(int i = 0; i < discoLights.transform.childCount; i++)
-//		{
-//			for(int j = 0; j < discoLights.transform.GetChild(i).childCount; j++)
-//			{
-//				Transform trans = discoLights.transform.GetChild(i).GetChild(j);
-//				if(trans.name == "Point light")
-//				{
-//					//trans.gameObject.GetComponent<Light>().intensity = b;
-//					//Debug.Log(trans.gameObject.GetComponent<Light>().intensity);
-//					Destroy(trans.gameObject);
-//				}
-//			}
-//		}
 	}
 }

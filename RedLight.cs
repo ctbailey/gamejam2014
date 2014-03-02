@@ -10,6 +10,6 @@ public class RedLight : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.localPosition = new Vector3(Mathf.PingPong(Time.time  / 4f, 1) - .5f, 0, 0);
+		transform.localPosition = new Vector3(Mathf.PingPong(Time.time  / 3f, 1) - .5f, 0, 0);
 	}
 }

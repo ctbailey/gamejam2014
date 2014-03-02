@@ -26,11 +26,21 @@ public class PlayerBehavior : MonoBehaviour {
 			Jump();
 		}
 		controller.Move(horizontalTranslation + verticalTranslation);
+		transform.position = new Vector3(transform.position.x, transform.position.y, 0);
 	}
 	Vector3 Update_MoveHorizontal()
 	{
-		float horizontal = Input.GetAxis("Horizontal") * horizontalSpeed;
+		float horizontal;// = Input.GetAxis("Horizontal") * horizontalSpeed;//(transform.position.y > -5) ? Input.GetAxis("Horizontal") * horizontalSpeed : 0;
+		if(transform.position.y > -5)
+		{
+			horizontal = Input.GetAxis("Horizontal") * horizontalSpeed;
+		}
+		else
+		{Debug.Log("Down"); Debug.Log(transform.position.y);
+			horizontal = 0;
+		}
         horizontal *= Time.deltaTime;
+		transform.rotation = Quaternion.Euler(0, 90 * -Input.GetAxis("Horizontal") + 180, 0);
         return new Vector3(horizontal, 0, 0);
 	}
 	Vector3 Update_MoveVertical()
