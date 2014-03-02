@@ -13,16 +13,8 @@ public class PlayerBehavior : MonoBehaviour {
 	public PlayerJumpAudio jumpAudio;
 	public float footstepTimeInterval = 0.1f;
 	private float startJumpSpeed = 0f;
-<<<<<<< HEAD
 	private float lastFootstepTime;
-	
-	// Use this for initialization
-	void Start () {
-	    footstepsAudio = GetComponentInChildren<PlayerFootstepsAudio>();
-		jumpAudio = GetComponentInChildren<PlayerJumpAudio>();
-		lastFootstepTime = Time.time;
-=======
-	float deadTimer = 0;
+		float deadTimer = 0;
 	float restartTimer = 0;
 	public bool isDead = false;
 	bool meshSwitch = false;
@@ -32,7 +24,9 @@ public class PlayerBehavior : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		animator = gameObject.GetComponent<Animator>();
->>>>>>> FETCH_HEAD
+	    footstepsAudio = GetComponentInChildren<PlayerFootstepsAudio>();
+		jumpAudio = GetComponentInChildren<PlayerJumpAudio>();
+		lastFootstepTime = Time.time;
 	}
 	
 	// Update is called once per frame
@@ -83,12 +77,10 @@ public class PlayerBehavior : MonoBehaviour {
 		}
         horizontal *= Time.deltaTime;
 		transform.rotation = Quaternion.Euler(0, 90 * -Input.GetAxis("Horizontal") + 180, 0);
-<<<<<<< HEAD
 		if(Mathf.Abs(horizontal) > 0)
 		{
 			TryPlayFootstep();
 		}
-=======
 		
 		if(Input.GetAxis("Horizontal") > .1 || Input.GetAxis("Horizontal") < -.1 )
 		{
@@ -99,7 +91,6 @@ public class PlayerBehavior : MonoBehaviour {
 			SetRun(false);
 		}
 		
->>>>>>> FETCH_HEAD
         return new Vector3(horizontal, 0, 0);
 	}
 	Vector3 Update_MoveVertical()
@@ -124,15 +115,12 @@ public class PlayerBehavior : MonoBehaviour {
 		{
 			if(!enemy.isDead)
 			{
-<<<<<<< HEAD
 				OnDeath();	
-=======
 				if(!enemy.isDead && !isDead)
 				{
 					OnDeath();
 					enemy.SetAttack(true);
 				}
->>>>>>> FETCH_HEAD
 			}
 		}
 	}

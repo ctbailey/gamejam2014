@@ -7,12 +7,10 @@ public class EnemyBehavior : MonoBehaviour {
 	public bool isDead = false;
 	protected Animator animator;
 	protected CharacterController controller;
-<<<<<<< HEAD
 	protected RoundRobinAudioCollection audioSources;
-		
-=======
+	float lastGroanTime = 0;
+	public float groanDelay = 2;
 	float attackTimer = 0;
->>>>>>> FETCH_HEAD
 	
 	// Use this for initialization
 	protected virtual void Start () {
@@ -22,6 +20,13 @@ public class EnemyBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	protected virtual void Update () {
+		float timeSinceLastGroan = Mathf.Abs(Time.time - lastGroanTime);
+		if(timeSinceLastGroan > groanDelay
+			&& !isDead)
+		{
+			GetComponent<AudioSource>().PlayOneShot(GetComponent<AudioSource>().clip);
+			lastGroanTime = Time.time;
+		}
 		if(animator.GetBool("Attack") && Time.timeSinceLevelLoad - attackTimer > 1.5f)
 		{
 			SetAttack(false);
