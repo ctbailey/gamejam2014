@@ -12,7 +12,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private float startJumpSpeed = 0f;
 	float deadTimer = 0;
 	float restartTimer = 0;
-	bool isDead = false;
+	public bool isDead = false;
 	bool meshSwitch = false;
 	
 	public Mesh zombieMesh;
@@ -102,9 +102,10 @@ public class PlayerBehavior : MonoBehaviour {
 			}
 			else
 			{
-				if(!enemy.isDead)
+				if(!enemy.isDead && !isDead)
 				{
-					OnDeath();	
+					OnDeath();
+					enemy.SetAttack(true);
 				}
 			}
 		}
