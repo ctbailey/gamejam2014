@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using AssemblyCSharp;
 
 public class EnemyBehavior : MonoBehaviour {
 	public BoxCollider playerFeet;
 	public bool isDead = false;
 	protected Animator animator;
 	protected CharacterController controller;
+	protected RoundRobinAudioCollection audioSources;
+		
 	
 	// Use this for initialization
 	protected virtual void Start () {

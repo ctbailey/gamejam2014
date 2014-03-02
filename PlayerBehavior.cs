@@ -9,11 +9,17 @@ public class PlayerBehavior : MonoBehaviour {
 	public float gravity = 1;
 	public float currentJumpSpeed = 15;
 	public float horizontalSpeed = 20.0f;
+	public PlayerFootstepsAudio footstepsAudio;
+	public PlayerJumpAudio jumpAudio;
+	public float footstepTimeInterval = 0.1f;
 	private float startJumpSpeed = 0f;
+	private float lastFootstepTime;
 	
 	// Use this for initialization
 	void Start () {
-	    
+	    footstepsAudio = GetComponentInChildren<PlayerFootstepsAudio>();
+		jumpAudio = GetComponentInChildren<PlayerJumpAudio>();
+		lastFootstepTime = Time.time;
 	}
 	
 	// Update is called once per frame
@@ -41,6 +47,10 @@ public class PlayerBehavior : MonoBehaviour {
 		}
         horizontal *= Time.deltaTime;
 		transform.rotation = Quaternion.Euler(0, 90 * -Input.GetAxis("Horizontal") + 180, 0);
+		if(Mathf.Abs(horizontal) > 0)
+		{
+			TryPlayFootstep();
+		}
         return new Vector3(horizontal, 0, 0);
 	}
 	Vector3 Update_MoveVertical()
@@ -54,6 +64,7 @@ public class PlayerBehavior : MonoBehaviour {
 	}
 	void Jump()
 	{
+		jumpAudio.PlayJump();	
 		startJumpSpeed = currentJumpSpeed;
 	}
 	void OnTriggerEnter(Collider c)
@@ -75,5 +86,15 @@ public class PlayerBehavior : MonoBehaviour {
 	void OnDeath()
 	{
 		Debug.Log ("Player died!");	
+	}
+	void TryPlayFootstep()
+	{
+		float timeSinceLastFootstep = Mathf.Abs(Time.time - lastFootstepTime);
+		if(timeSinceLastFootstep > footstepTimeInterval
+			&& controller.isGrounded)
+		{
+			footstepsAudio.PlayFootstep();
+			lastFootstepTime = Time.time;
+		}
 	}
 }
