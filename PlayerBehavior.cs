@@ -36,7 +36,7 @@ public class PlayerBehavior : MonoBehaviour {
 			horizontal = Input.GetAxis("Horizontal") * horizontalSpeed;
 		}
 		else
-		{Debug.Log("Down"); Debug.Log(transform.position.y);
+		{
 			horizontal = 0;
 		}
         horizontal *= Time.deltaTime;

@@ -34,7 +34,7 @@ public class EnemyBehavior : MonoBehaviour {
 	
 	protected virtual void SetWalk(bool walk)
 	{
-		animator.SetBool("Walking", walk);
+		animator.SetBool("Walk", walk);
 	}
 	
 	protected virtual void SetFall(bool fall)
