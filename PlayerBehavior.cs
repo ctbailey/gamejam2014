@@ -14,10 +14,12 @@ public class PlayerBehavior : MonoBehaviour {
 	public float footstepTimeInterval = 0.1f;
 	private float startJumpSpeed = 0f;
 	private float lastFootstepTime;
-		float deadTimer = 0;
+	float deadTimer = 0;
 	float restartTimer = 0;
 	public bool isDead = false;
 	bool meshSwitch = false;
+	BoxCollider feet;
+	bool feetTouch;
 	
 	public Mesh zombieMesh;
 	
@@ -27,6 +29,7 @@ public class PlayerBehavior : MonoBehaviour {
 	    footstepsAudio = GetComponentInChildren<PlayerFootstepsAudio>();
 		jumpAudio = GetComponentInChildren<PlayerJumpAudio>();
 		lastFootstepTime = Time.time;
+		feet = gameObject.GetComponent<BoxCollider>();
 	}
 	
 	// Update is called once per frame
@@ -35,8 +38,8 @@ public class PlayerBehavior : MonoBehaviour {
 		{
 			Vector3 horizontalTranslation = Update_MoveHorizontal();
 	        Vector3 verticalTranslation = Update_MoveVertical();
-			if(Input.GetButtonDown("Jump")
-				&& controller.isGrounded)
+			if(Input.GetButtonDown("Jump") && !isDead
+				&& (controller.isGrounded || feetTouch))
 			{
 				Jump();
 			}
@@ -122,6 +125,20 @@ public class PlayerBehavior : MonoBehaviour {
 					enemy.SetAttack(true);
 				}
 			}
+		}
+	}
+	void OnTriggerStay(Collider c)
+	{
+		if(c.GetType() == typeof(BoxCollider))
+		{
+			feetTouch = true;
+		}
+	}
+	void OnTriggerExit(Collider c)
+	{
+		if(c.GetType() == typeof(BoxCollider))
+		{
+			feetTouch = false;
 		}
 	}
 	public void KilledEnemy(EnemyBehavior enemy)

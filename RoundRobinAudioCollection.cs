@@ -16,7 +16,7 @@ namespace AssemblyCSharp
 		}
 		public void PlayRandomSound()
 		{
-			Debug.Log(unusedIndices.Count);
+			//Debug.Log(unusedIndices.Count);
 			if(unusedIndices.Count == 0)
 			{
 				count++;

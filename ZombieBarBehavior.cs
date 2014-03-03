@@ -12,7 +12,7 @@ public class ZombieBarBehavior : EnemyBehavior {
 		base.Update();
 		
 		float dist = transform.position.x - playerFeet.transform.position.x;
-		if(dist < 2f && dist > 1 && !animator.GetBool("Attack"))
+		if(dist < 2f && dist > 1 && !animator.GetBool("Attack") && !hide)
 		{
 			animator.SetBool("Attack", true);
 			jumpTime = Time.timeSinceLevelLoad;

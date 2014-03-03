@@ -11,6 +11,7 @@ public class EnemyBehavior : MonoBehaviour {
 	float lastGroanTime = 0;
 	public float groanDelay = 2;
 	float attackTimer = 0;
+	public bool hide = false;
 	
 	// Use this for initialization
 	protected virtual void Start () {
